@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "appointments",
+  "info": {
+    "singularName": "appointment",
+    "pluralName": "appointments",
+    "displayName": "Appointment"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "barber": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::barber.barber"
+    },
+    "service": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::service.service"
+    },
+    "customer_name": {
+      "type": "string"
+    },
+    "Date": {
+      "type": "datetime"
+    }
+  }
+}
